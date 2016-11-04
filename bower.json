@@ -1,0 +1,19 @@
+{
+  "name": "jquery exo3",
+  "description": "joli test bower",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datepicker": "*",
+    "lodash": "^4.16.6"
+  }
+}

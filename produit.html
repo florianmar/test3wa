@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.4.0/css/bootstrap-slider.min.css">
+     <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.6/css/bootstrap-colorpicker.min.css" media="screen" title="no title" charset="utf-8">
+   <link rel="stylesheet" href="produit.css" media="screen" title="no title">
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+ </head>
+ <body>
+   <div class="container">
+     <div class="col-md-8">
+
+
+   <form>
+<div class="form-group">
+ <label for="produit">Nom du Produit</label>
+ <input type="produit" class="form-control" id="produit" placeholder="Nom du Produit">
+</div>
+<div class="form-group">
+ <label for="codebarre">Code Barre</label>
+ <input type="codebarre" class="form-control" id="codebarre" placeholder="Entrez le code-barre">
+</div>
+
+<div class="form-group">
+ <label for="prix">Prix du produit</label>
+ <input type="prix" class="form-control" id="prix" placeholder="Entrez le prix du produit">
+ Filter by price interval:<b>€ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> </input><b>€ 1000</b>
+</div>
+<div class="form-group">
+ <label for="disponibilite">Disponibilité</label>
+ <input type="disponibilite" class="form-control" id="disponibilite" placeholder="Disponibilité du produit">
+</div>
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="form-group">
+
+ <input type="img" class="form-control" id="image" placeholder="Image du produit">
+</div>
+<div class="summernote">
+  <p>Description du produit</p>
+</div>
+<div class="form-group">
+ <label for="quantitemin">Quantité minimum</label>
+ <input type="quantitemin" class="form-control" id="quantitemin" placeholder="Quantité minimum">
+</div>
+<div class="form-group">
+ <label for="quantitemax">Quantité maximum</label>
+ <input type="quantitemax" class="form-control" id="quantitemax" placeholder="Quantité maximum">
+</div>
+<div class="form-group" id="clef">
+ <label for="motclef">Mot clefs</label>
+ <textarea type="text" class="form-control" id="motclef" placeholder="Mot clefs du produit"></textarea>
+ <p id="compteur">- 0 mots - </p>
+</div>
+<div class="form-group">
+ <label for="color">Couleur du produit</label>
+ <input type="couleur" class="form-control" id="couleur" placeholder="Couleur">
+</div>
+<div class="form-group">
+ <label for="typedevente">Type de vente</label>
+ <select class="form-control">
+  <option>Choisissez votre type de vente</option>
+  <option>Neuf</option>
+  <option>Occasion</option>
+  <option>Dématérialisé</option>
+  <option id="autre">Autre</option>
+</select>
+<div class="form-group" style='display:none'id='other'>
+ <label for="autre"></label>
+ <input type="autre" class="form-control" id="au" placeholder="autre">
+</div>
+
+</div>
+<button type="button" class="btn btn-default">Créer une fiche produit</button>
+</form>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="produit.js" charset="utf-8">
+
+   </script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+   <script src='
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.4.0/bootstrap-slider.min.js'>
+
+
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.min.js">
+
+   </script>
+   <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.6/js/bootstrap-colorpicker.min.js">
+
+</script>
+
+<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+ </body>
+</html>
